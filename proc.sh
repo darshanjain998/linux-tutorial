@@ -10,9 +10,9 @@ fi
 echo "watching PID $1"
 
 while [ $STATUS -eq 0 ]
-do 
+do
  ps $1 > /dev/null
- STATUS=$? 
+ STATUS=$?
 done
 echo "process $1 is terminated"
 exit 0
